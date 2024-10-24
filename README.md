@@ -1,20 +1,59 @@
-# Assignment 08-09
+# Proper Trench Coats - Coat Management Application
 
-## Requirements
-- Create a graphical user interface using the Qt framework for the problem you have been working on for the previous assignments.
+## Overview
 
-## Week 11
-- Implement the interface design, without using the Qt Designer. Use layouts to design your interface.
-- The list or table displaying the repository entities in administrator mode should be populated using your input file. 
+The **Proper Trench Coats** application is a console-based program designed for managing a database of trench coats. It supports two main modes: **Administrator Mode** for stock management and **User Mode** for browsing and purchasing coats. This project is written in C++ with a focus on Object-Oriented Programming (OOP) principles and follows the **Model-View-Controller (MVC)** architecture.
 
-## Week 12 
--	All functionalities must be available through the GUI. You may use Qt Designer, if you want to change the initial design of your GUI.
--	The functionality of the application must be the same (including the one-by-one iteration of objects for the user mode).
+## Features
 
-## Bonus possibility (0.2p, deadline week 12)
-Create a graphical representation of the data in your application. You have an example below: a bar chart representing the number of songs for each artist. Your representations can be a bar chart, a pie chart or another type of chart. You can even use circles or rectangles or any other geometric shapes to represent the data.
+### Administrator Mode
+In this mode, administrators can:
+- **Add a Coat**: Add a new trench coat to the database with size, color, price, quantity, and photo URL.
+- **Remove a Coat**: Remove either a full stock or individual coat based on size and color.
+- **Update a Coat**: Update existing coat details such as price, quantity, and photo URL.
+- **Display All Coats**: List all the coats in the database, with their details.
 
-Hint: You can use QPainter (https://doc.qt.io/qt-6/qpainter.html), QGraphicsScene (https://doc.qt.io/qt-6/qgraphicsscene.html) or a special widget designed for plotting and data visualisation – QCustomPlot (http://www.qcustomplot.com/).
+### User Mode
+Users can:
+- **Browse Coats**: View available trench coats, filtered by size.
+- **Add to Basket**: Add selected coats to a shopping basket and track the total price.
+- **Save Basket**: Save the shopping basket to a file.
+- **View Basket**: Display all items in the shopping basket and their total cost.
 
-<img width="704" alt="Screenshot 2021-04-17 at 20 24 04" src="https://user-images.githubusercontent.com/25611695/115121335-df0f7e00-9fba-11eb-8839-40cd55da1d69.png">
+### File Handling and Exception Management
+- **File Saving**: Users can save the shopping basket to a file by providing a file path.
+- **Exception Handling**: The system manages various runtime errors such as invalid inputs and file I/O issues.
+
+### MVC Architecture
+The application follows the **Model-View-Controller (MVC)** design pattern:
+- **Model**: Represents the data (coats and shopping basket).
+- **View**: Provides a console-based user interface.
+- **Controller**: Handles the communication between the view and the model.
+
+## How to Run
+
+1. Clone the repository.
+2. Compile the C++ source files.
+3. Run the executable in the console.
+
+## Example Usage
+
+Upon running the program, the user will be prompted to choose between **Administrator Mode** or **User Mode**. From there, they can interact with the application by following the menu options.
+
+### Administrator Mode
+- Add, remove, update, and display coats in the database.
+
+### User Mode
+- Browse available coats, add coats to the shopping basket, view the total price, and save the basket to a file.
+
+## Graphical Representation
+
+The application also allows the creation of a graphical representation of the data. For example, we can create a **bar chart** that represents the number of coats available for each size. This visual representation provides an intuitive understanding of the stock distribution across various sizes.
+
+## Technologies Used
+- **C++**
+- **Object-Oriented Programming (OOP)**
+- **Model-View-Controller (MVC) Architecture**
+- **Exception Handling**
+
 
