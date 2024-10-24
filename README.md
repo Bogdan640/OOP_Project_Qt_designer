@@ -1,51 +1,20 @@
-# OOP Trench Coat Shop Management System
+# Assignment 08-09
 
-This is a complex C++ Object-Oriented Programming (OOP) project that manages the infrastructure of a trench coat shop. The application offers two modes of operation: **Administrator Mode** and **Client Mode**, providing separate functionalities for managing and purchasing coats. The graphical interface of this project is created using **Qt Designer**.
+## Requirements
+- Create a graphical user interface using the Qt framework for the problem you have been working on for the previous assignments.
 
-## Features
+## Week 11
+- Implement the interface design, without using the Qt Designer. Use layouts to design your interface.
+- The list or table displaying the repository entities in administrator mode should be populated using your input file. 
 
-### Administrator Mode
-As an administrator, you have complete control over managing the trench coat database. The following functionalities are available to maintain and update the inventory:
+## Week 12 
+-	All functionalities must be available through the GUI. You may use Qt Designer, if you want to change the initial design of your GUI.
+-	The functionality of the application must be the same (including the one-by-one iteration of objects for the user mode).
 
-- **Add a new coat:**  
-  Input and store details of a new coat (size, color, price, quantity) in the database for future availability.
-  
-- **Remove an entire stock of coats:**  
-  Delete all entries of a specific coat from the database, effectively removing the entire stock if no longer needed.
+## Bonus possibility (0.2p, deadline week 12)
+Create a graphical representation of the data in your application. You have an example below: a bar chart representing the number of songs for each artist. Your representations can be a bar chart, a pie chart or another type of chart. You can even use circles or rectangles or any other geometric shapes to represent the data.
 
-- **Remove a specific coat:**  
-  Remove an individual coat from the database, keeping other stock intact.
+Hint: You can use QPainter (https://doc.qt.io/qt-6/qpainter.html), QGraphicsScene (https://doc.qt.io/qt-6/qgraphicsscene.html) or a special widget designed for plotting and data visualisation – QCustomPlot (http://www.qcustomplot.com/).
 
-- **Update coat information:**  
-  Modify the details of an existing coat, such as updating its price, size, color, or other attributes.
+<img width="704" alt="Screenshot 2021-04-17 at 20 24 04" src="https://user-images.githubusercontent.com/25611695/115121335-df0f7e00-9fba-11eb-8839-40cd55da1d69.png">
 
-- **Display all coats:**  
-  View the list of all coats currently stored in the database, including their details and quantities, to assess the current stock.
-
-- **Exit the application:**  
-  Exit Administrator Mode and return to the main menu once inventory management is complete.
-
-### Client Mode
-As a client (user), you can browse through the collection of trench coats and manage your shopping experience. The following features are provided:
-
-- **Browse available trench coats:**  
-  View the collection of trench coats in the store. Navigate through the options and select coats to add to your shopping basket. Explore the variety of coats based on their sizes, colors, and prices.
-
-- **View your shopping basket:**  
-  Review the items added to your shopping basket, along with the total price of all selected coats.
-
-- **Save your shopping basket to a file:**  
-  Export and save the details of the items in your shopping basket to a file for future reference.
-
-- **Exit the application:**  
-  When you're done browsing or managing your basket, exit Client Mode.
-
-## Graphical Interface
-
-The application’s graphical interface is designed using **Qt Designer**, providing a user-friendly and visually appealing way to interact with both Administrator and Client modes.
-
-## How to Run the Project
-
-1. Clone this repository using Git:
-   ```bash
-   git clone https://github.com/Bogdan640/OOP_Project_Qt_designer.git
