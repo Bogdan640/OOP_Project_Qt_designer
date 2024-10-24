@@ -16,35 +16,35 @@ find_package(Qt6 COMPONENTS
         REQUIRED)
 
 add_executable(qt11 main.cpp
-        DynamicArr.cpp
-        DynamicArr.h
-        coat.cpp
-        Repo.h
-        Repo.cpp
-        Services.h
-        Services.cpp
+        Domain/DynamicArr.cpp
+        Domain/DynamicArr.h
+        Domain/coat.cpp
+        Repository/Repo.h
+        Repository/Repo.cpp
+        Service/Services.h
+        Service/Services.cpp
         #UI.h
         #UI.cpp
         main.cpp
-        tests.h
-        tests.cpp
-        Utils.h
-        Utils.cpp
-        RepositoryExceptions.h
-        RepositoryExceptions.cpp
-        shopping_basket.h
-        shopping_basket.cpp
-        FileBasket.h
-        FileBasket.cpp
-        GUI.h
-        GUI.cpp
+        Test/tests.h
+        Test/tests.cpp
+        Utils/Utils.h
+        Utils/Utils.cpp
+        Repository/RepositoryExceptions.h
+        Repository/RepositoryExceptions.cpp
+        Domain/shopping_basket.h
+        Domain/shopping_basket.cpp
+        Repository/FileBasket.h
+        Repository/FileBasket.cpp
+        GUI/GUI.h
+        GUI/GUI.cpp
         mainwindow.h
         mainwindow.cpp
         mainwindow.ui
-        Action.cpp
-        Action.h
-        TableModel.h
-        TableModel.cpp
+        Domain/Action.cpp
+        Domain/Action.h
+        Domain/TableModel.h
+        Domain/TableModel.cpp
 
 )
 
