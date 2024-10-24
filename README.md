@@ -3,6 +3,7 @@
 ## Overview
 
 The **Proper Trench Coats** application is a console-based program designed for managing a database of trench coats. It supports two main modes: **Administrator Mode** for stock management and **User Mode** for browsing and purchasing coats. This project is written in C++ with a focus on Object-Oriented Programming (OOP) principles and follows the **Model-View-Controller (MVC)** architecture.
+The program runs in both **Terminal** mode and **Graphical Interface (GUI)** mode, providing flexibility for different types of users. Additionally, the application offers **Undo** and **Redo** functionalities for enhanced usability.
 
 ## Features
 
@@ -19,6 +20,12 @@ Users can:
 - **Add to Basket**: Add selected coats to a shopping basket and track the total price.
 - **Save Basket**: Save the shopping basket to a file.
 - **View Basket**: Display all items in the shopping basket and their total cost.
+
+###  Undo/Redo Services
+The program includes **Undo** and **Redo** functionalities that allow the administrator to easily revert or repeat their last actions. This feature applies to operations like adding, removing, or updating coats in the database.
+
+- **Undo**: Reverts the last modification (e.g., adding a coat, removing a coat).
+- **Redo**: Re-applies the last reverted action.
 
 ### File Handling and Exception Management
 - **File Saving**: Users can save the shopping basket to a file by providing a file path.
